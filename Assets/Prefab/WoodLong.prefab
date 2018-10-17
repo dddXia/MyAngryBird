@@ -104,6 +104,9 @@ MonoBehaviour:
   hurt: {fileID: 21300184, guid: ffc28434a5a35e34d813ed7a1edfc993, type: 3}
   boom: {fileID: 1804772201864554, guid: dcf97a997413053409f985af7ba7ea53, type: 2}
   isPig: 0
+  hurtClip: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+  dead: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+  birdCollision: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
   score: {fileID: 1638884597508562, guid: db12852b857bdaf43acff28e12b90135, type: 2}
 --- !u!212 &212167518519695328
 SpriteRenderer:

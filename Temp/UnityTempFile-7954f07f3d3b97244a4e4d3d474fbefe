@@ -186,11 +186,13 @@
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
 Assets/GameManage.cs
+Assets/PasuePanel.cs
 "Assets/PocketRPG Trails/Scripts/Effects/WeaponTrail.cs"
 "Assets/PocketRPG Trails/Scripts/Entities/BladeMaster.cs"
 "Assets/PocketRPG Trails/Scripts/Utility/AnimationController.cs"
 Assets/Script/Bird.cs
 Assets/Script/Boom.cs
 Assets/Script/Pig.cs
+Assets/Script/Win.cs
 Assets/TestTrail.cs
 -lib:D:\unity201827f1\Editor\Data\MonoBleedingEdge\lib\mono\unity

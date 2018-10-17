@@ -7,7 +7,6 @@ public class Bird : MonoBehaviour {
     //在面板中修改数值
     public float maxDis;
 
-
     public LineRenderer right;
     public Transform rightPos;
     public LineRenderer left;
@@ -16,6 +15,12 @@ public class Bird : MonoBehaviour {
     public GameObject boom;
 
     private TestTrail myTrail;
+    private bool canMove = true;
+    public float smooth = 3;
+
+
+    public AudioClip select;
+    public AudioClip fly;
     //public bool ________;
 
     private bool isClick = false;
@@ -25,20 +30,28 @@ public class Bird : MonoBehaviour {
 
     private void OnMouseDown(  )//鼠标按下
     {
-        isClick = true;
-        rg.isKinematic = true;
+        if (canMove) {
+            AudioPlay(select);
+            isClick = true;
+            rg.isKinematic = true;
+        }
+       
     }
 
     private void OnMouseUp(  )//鼠标抬起
     {
-        isClick = false;
+        if( canMove) {
+            canMove = false;
+            isClick = false;
 
-        rg.isKinematic = false;
-        Invoke("Fly", 0.1f);//延迟关节失效
+            rg.isKinematic = false;
+            Invoke("Fly", 0.1f);//延迟关节失效
 
-        //禁用划线组件
-        right.enabled = false;
-        left.enabled = false;
+            //禁用划线组件
+            right.enabled = false;
+            left.enabled = false;
+        }
+     
     }
 
     private void Awake()
@@ -69,11 +82,17 @@ public class Bird : MonoBehaviour {
             Line();
         }
 
+        //相机跟随
+        float posX = transform.position.x;
+        Camera.main.transform.position = Vector3.Lerp( Camera.main.transform.position, 
+            new Vector3( Mathf.Clamp( posX, 0, 12 ) ,  Camera.main.transform.position.y, Camera.main.transform.position.z),
+            smooth*Time.deltaTime);
     
 	}
 
     void Fly(  )
     {
+        AudioPlay(  fly ); 
         myTrail.TrailStart();
         sp.enabled = false;//关节失效
         Invoke("Next", 2);
@@ -108,6 +127,11 @@ public class Bird : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         myTrail.Clear(  );
+    }
+
+    public  void AudioPlay(  AudioClip clip )
+    {
+        AudioSource.PlayClipAtPoint(  clip, transform.position  );
     }
 
 }
