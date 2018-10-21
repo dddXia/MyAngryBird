@@ -4,10 +4,6 @@
 -langversion:4
 -out:Temp/Assembly-CSharp.dll
 -nostdlib
--r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
--r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
--r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
--r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:D:\unity201827f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll
 -r:D:\unity201827f1\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll
 -r:D:\unity201827f1\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll
@@ -70,6 +66,10 @@
 -r:D:\unity201827f1\Editor\Data\Managed/UnityEngine/UnityEngine.XRModule.dll
 -r:D:\unity201827f1\Editor\Data\Managed/UnityEditor.dll
 -r:D:\unity201827f1\Editor\Data\Managed/Unity.Locator.dll
+-r:Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:Library/ScriptAssemblies/Unity.TextMeshPro.dll
 -r:D:/unity201827f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll
 -r:D:/unity201827f1/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll
 -r:D:/unity201827f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll
@@ -185,14 +185,19 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-Assets/GameManage.cs
-Assets/PasuePanel.cs
+Assets/LevelSelect.cs
 "Assets/PocketRPG Trails/Scripts/Effects/WeaponTrail.cs"
 "Assets/PocketRPG Trails/Scripts/Entities/BladeMaster.cs"
 "Assets/PocketRPG Trails/Scripts/Utility/AnimationController.cs"
 Assets/Script/Bird.cs
+Assets/Script/BlackBird.cs
 Assets/Script/Boom.cs
+Assets/Script/GameManage.cs
+Assets/Script/GreenBird.cs
+Assets/Script/MapSelect.cs
+Assets/Script/PasuePanel.cs
 Assets/Script/Pig.cs
+Assets/Script/TestTrail.cs
 Assets/Script/Win.cs
-Assets/TestTrail.cs
+Assets/Script/YellowBird.cs
 -lib:D:\unity201827f1\Editor\Data\MonoBleedingEdge\lib\mono\unity

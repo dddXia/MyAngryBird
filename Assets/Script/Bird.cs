@@ -14,7 +14,7 @@ public class Bird : MonoBehaviour {
 
     public GameObject boom;
 
-    private TestTrail myTrail;
+    protected TestTrail myTrail;
     private bool canMove = true;
     public float smooth = 3;
 
@@ -24,9 +24,13 @@ public class Bird : MonoBehaviour {
     //public bool ________;
 
     private bool isClick = false;
+    private bool isFly = false;
     [HideInInspector]
     public SpringJoint2D sp;
-    private Rigidbody2D rg;
+    protected Rigidbody2D rg;
+
+    public Sprite hurt;
+    protected SpriteRenderer render;
 
     private void OnMouseDown(  )//鼠标按下
     {
@@ -59,11 +63,12 @@ public class Bird : MonoBehaviour {
         sp = GetComponent<SpringJoint2D>();
         rg = GetComponent<Rigidbody2D>();
         myTrail = GetComponent<TestTrail>();
+        render = GetComponent<SpriteRenderer>();
     }
 
     // Use this for initialization
     void Start () {
-        Debug.Log(rightPos.position);
+        //Debug.Log(rightPos.position);
     }
 	
 	// Update is called once per frame
@@ -88,14 +93,20 @@ public class Bird : MonoBehaviour {
             new Vector3( Mathf.Clamp( posX, 0, 12 ) ,  Camera.main.transform.position.y, Camera.main.transform.position.z),
             smooth*Time.deltaTime);
     
+        if( isFly) {
+            if( Input.GetMouseButtonDown( 0 )) {
+                showSkill();
+            }
+        }
 	}
 
     void Fly(  )
     {
-        AudioPlay(  fly ); 
+        AudioPlay(  fly );
+        isFly = true;
         myTrail.TrailStart();
         sp.enabled = false;//关节失效
-        Invoke("Next", 2);
+        Invoke("Next", 5);
     }
     /// <summary>
     /// 划线
@@ -116,7 +127,7 @@ public class Bird : MonoBehaviour {
     /// 下一次小鸟飞出
     /// </summary>
 
-    void Next()
+    protected virtual void Next()
     {
         GameManage._instance.birds.Remove(this);
         Destroy(gameObject);
@@ -126,7 +137,9 @@ public class Bird : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        isFly = false;
         myTrail.Clear(  );
+        
     }
 
     public  void AudioPlay(  AudioClip clip )
@@ -134,4 +147,16 @@ public class Bird : MonoBehaviour {
         AudioSource.PlayClipAtPoint(  clip, transform.position  );
     }
 
+    /// <summary>
+    /// 小鸟技能
+    /// </summary>
+    public virtual void showSkill()
+    {
+        isFly = false;
+    }
+
+    public void Hurt()
+    {
+        render.sprite = hurt;
+    }
 }

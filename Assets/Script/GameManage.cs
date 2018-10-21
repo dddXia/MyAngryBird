@@ -15,6 +15,8 @@ public class GameManage : MonoBehaviour {
     public GameObject lose;
     public GameObject[] stars;
 
+    private int starsNum = 0;
+
     private void Awake()
     {
         _instance = this;
@@ -51,6 +53,7 @@ public class GameManage : MonoBehaviour {
             if (birds.Count >0) {//下一只小鸟准备
                 Initalized();
             } else {//输了
+                //此时应该隐藏UI上的暂停按钮，以免在此时暂停了游戏，
                 lose.SetActive(true);
             }
         } else {//赢了
@@ -65,27 +68,29 @@ public class GameManage : MonoBehaviour {
 
     IEnumerator show()
     {
-        for (int i = 0; i < birds.Count + 1; ++i) {
+        for (  ; starsNum < birds.Count + 1; ++starsNum) {
+            if ( starsNum >= stars.Length) break;
             yield return new WaitForSeconds(0.2f);
-            stars[i].SetActive(true);
+            stars[starsNum].SetActive(true);
         }
     }
 	
     public void Replay()
     {
-        Debug.Log(2);
+        SaveData();
+        Time.timeScale = 1;
         SceneManager.LoadScene( 2 ) ;
     }
 
     public void Home()
     {
-        Debug.Log(1);
+        SaveData();
+        Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
 
-
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void SaveData()
+    {
+        PlayerPrefs.SetInt( PlayerPrefs.GetString("nowLevel" ), starsNum );
+    }
 }

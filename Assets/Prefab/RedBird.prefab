@@ -41,11 +41,12 @@ GameObject:
   - component: {fileID: 50627935473350180}
   - component: {fileID: 231092564085324040}
   - component: {fileID: 58247381411329842}
-  - component: {fileID: 114086722020537200}
   - component: {fileID: 114786958542391282}
+  - component: {fileID: 58219184033050742}
+  - component: {fileID: 114061654329653844}
   m_Layer: 0
   m_Name: RedBird
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1876518429174410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.36, y: 0.44, z: 0}
+  m_LocalPosition: {x: -10.42, y: -21.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4692176456104210}
@@ -139,6 +140,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58219184033050742
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876518429174410}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
 --- !u!58 &58247381411329842
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -153,8 +169,8 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
---- !u!114 &114086722020537200
+  m_Radius: 0.4
+--- !u!114 &114061654329653844
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +187,11 @@ MonoBehaviour:
   left: {fileID: 0}
   leftPos: {fileID: 0}
   boom: {fileID: 1804772201864554, guid: dcf97a997413053409f985af7ba7ea53, type: 2}
+  smooth: 3
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
   sp: {fileID: 0}
+  hurt: {fileID: 21300322, guid: 834923ce1632eb747946535b73a099cb, type: 3}
 --- !u!114 &114522703737065230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,7 +258,7 @@ SpriteRenderer:
   m_SortingLayerID: -571130215
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300318, guid: 834923ce1632eb747946535b73a099cb, type: 3}
+  m_Sprite: {fileID: 21300186, guid: 834923ce1632eb747946535b73a099cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

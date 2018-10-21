@@ -19,8 +19,9 @@ public class Pig : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
-        if( collision.gameObject.tag == "player") {
+        if( collision.gameObject.tag == "Player") {
             AudioPlay( birdCollision );
+            collision.transform.GetComponent< Bird > ().Hurt();
         }
 
         //用另一个物体相对于猪的速度做判断(用相对速度)
@@ -32,7 +33,7 @@ public class Pig : MonoBehaviour {
         }
     }
 
-    void Dead()
+    public void Dead()
     {
         if (isPig) {
             GameManage._instance.pigs.Remove(this);
