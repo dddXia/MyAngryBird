@@ -15,7 +15,8 @@ public class Bird : MonoBehaviour {
     public GameObject boom;
 
     protected TestTrail myTrail;
-    private bool canMove = true;
+    [HideInInspector]
+    public bool canMove = false;
     public float smooth = 3;
 
 
@@ -45,7 +46,7 @@ public class Bird : MonoBehaviour {
     private void OnMouseUp(  )//鼠标抬起
     {
         if( canMove) {
-            canMove = false;
+            
             isClick = false;
 
             rg.isKinematic = false;
@@ -54,6 +55,7 @@ public class Bird : MonoBehaviour {
             //禁用划线组件
             right.enabled = false;
             left.enabled = false;
+            canMove = false;
         }
      
     }

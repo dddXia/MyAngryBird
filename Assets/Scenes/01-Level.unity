@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 60367670}
   - component: {fileID: 60367669}
   m_Layer: 5
-  m_Name: 2
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,6 +236,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 170273045}
+  - {fileID: 1212192504}
+  - {fileID: 1851385865}
 --- !u!114 &60367670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +278,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 60367671}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 60367669}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &60367671
@@ -888,7 +903,7 @@ GameObject:
   - component: {fileID: 191286023}
   - component: {fileID: 191286022}
   m_Layer: 5
-  m_Name: 2
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -928,7 +943,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300038, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 42386162}
+  - {fileID: 1761115131}
+  - {fileID: 1564028777}
 --- !u!114 &191286023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +986,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 191286024}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 191286022}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &191286024
@@ -1160,7 +1190,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300040, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 1536840314}
+  - {fileID: 961695758}
+  - {fileID: 84370388}
 --- !u!114 &262444715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1199,7 +1233,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 262444712}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 262444714}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &281310073
@@ -1290,7 +1335,7 @@ GameObject:
   - component: {fileID: 291973401}
   - component: {fileID: 291973400}
   m_Layer: 5
-  m_Name: 3
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1331,6 +1376,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 1700297974}
+  - {fileID: 1595148977}
+  - {fileID: 112007805}
 --- !u!114 &291973401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1369,7 +1418,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 291973402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 291973400}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &291973402
@@ -2151,7 +2211,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300038, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300040, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 1869118891}
+  - {fileID: 366788961}
+  - {fileID: 1670738947}
 --- !u!114 &520408171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2190,7 +2254,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 520408168}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 520408170}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &526469540
@@ -2203,6 +2278,7 @@ GameObject:
   - component: {fileID: 526469541}
   - component: {fileID: 526469543}
   - component: {fileID: 526469542}
+  - component: {fileID: 526469544}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -2262,6 +2338,58 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 526469540}
   m_CullTransparentMesh: 0
+--- !u!114 &526469544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 526469540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 526469542}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2022188645}
+        m_MethodName: panelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &531693052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,11 +2853,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae81f56736f21014094d13ea21263d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starsNum: 10
+  starsNum: 8
   locks: {fileID: 1530357065}
   stars: {fileID: 292691159}
   panel: {fileID: 739096807}
   map: {fileID: 853270905}
+  starsText: {fileID: 1499243921}
+  startNum: 7
+  endNum: 9
 --- !u!114 &642748923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3175,7 +3306,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3592,6 +3723,7 @@ GameObject:
   - component: {fileID: 1052270837}
   - component: {fileID: 1052270836}
   - component: {fileID: 1052270835}
+  - component: {fileID: 1052270838}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3659,6 +3791,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1052270838
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1052270834}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6a515a9c0f8c2b945ba1fad59cd2c8d9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.281
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1130516052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,7 +3899,7 @@ GameObject:
   - component: {fileID: 1130516055}
   - component: {fileID: 1130516054}
   m_Layer: 5
-  m_Name: 1
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3712,7 +3939,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300038, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 201902565}
+  - {fileID: 340760973}
+  - {fileID: 552226352}
 --- !u!114 &1130516055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3751,7 +3982,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1130516056}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1130516054}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1130516056
@@ -3798,6 +4040,7 @@ GameObject:
   - component: {fileID: 1150015430}
   - component: {fileID: 1150015432}
   - component: {fileID: 1150015431}
+  - component: {fileID: 1150015433}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -3857,6 +4100,58 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1150015429}
   m_CullTransparentMesh: 0
+--- !u!114 &1150015433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150015429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1150015431}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 642748922}
+        m_MethodName: panelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1180031690
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4516,7 @@ GameObject:
   - component: {fileID: 1269446272}
   - component: {fileID: 1269446271}
   m_Layer: 5
-  m_Name: 1
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4262,6 +4557,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 1519276960}
+  - {fileID: 1953985678}
+  - {fileID: 1336050414}
 --- !u!114 &1269446272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4300,7 +4599,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1269446273}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1269446271}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1269446273
@@ -4564,6 +4874,9 @@ MonoBehaviour:
   stars: {fileID: 1199751666}
   panel: {fileID: 308861151}
   map: {fileID: 853270905}
+  starsText: {fileID: 1709175052}
+  startNum: 1
+  endNum: 3
 --- !u!114 &1447781098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5068,6 +5381,7 @@ GameObject:
   - component: {fileID: 1561960706}
   - component: {fileID: 1561960708}
   - component: {fileID: 1561960707}
+  - component: {fileID: 1561960709}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -5127,6 +5441,58 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1561960705}
   m_CullTransparentMesh: 0
+--- !u!114 &1561960709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1561960705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1561960707}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1447781097}
+        m_MethodName: panelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1564028777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6149,7 +6515,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300046, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300040, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 722183814}
+  - {fileID: 308530186}
+  - {fileID: 385484171}
 --- !u!114 &1872426603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6188,7 +6558,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1872426600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1872426602}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1916446808
@@ -6274,7 +6655,7 @@ GameObject:
   - component: {fileID: 1938670797}
   - component: {fileID: 1938670796}
   m_Layer: 5
-  m_Name: 3
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6314,7 +6695,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelect: 0
-  levelBG: {fileID: 21300030, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  levelBG: {fileID: 21300038, guid: 47319c4e62c9a014fbb8da413fbf3b7c, type: 3}
+  stars:
+  - {fileID: 1999133598}
+  - {fileID: 908265277}
+  - {fileID: 98737643}
 --- !u!114 &1938670797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6353,7 +6738,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1938670798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1938670796}
+        m_MethodName: Selected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1938670798
@@ -6702,11 +7098,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae81f56736f21014094d13ea21263d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  starsNum: 20
+  starsNum: 4
   locks: {fileID: 2079008762}
   stars: {fileID: 1916446808}
   panel: {fileID: 1636075297}
   map: {fileID: 853270905}
+  starsText: {fileID: 569497939}
+  startNum: 4
+  endNum: 6
 --- !u!114 &2022188646
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,8 @@ public class GameManage : MonoBehaviour {
 
     private int starsNum = 0;
 
+    private int totalNum = 2;//一张地图总关卡数
+
     private void Awake()
     {
         _instance = this;
@@ -37,9 +39,11 @@ public class GameManage : MonoBehaviour {
                 birds[0].transform.position = originPos;
                 birds[i].enabled = true;
                 birds[i].sp.enabled = true;
+                birds[i].canMove = true;
             } else {
                 birds[i].enabled = false;
                 birds[i].sp.enabled = false;
+                birds[i].canMove = false;
             }
         }
     }
@@ -91,6 +95,15 @@ public class GameManage : MonoBehaviour {
 
     public void SaveData()
     {
-        PlayerPrefs.SetInt( PlayerPrefs.GetString("nowLevel" ), starsNum );
+        if( starsNum > PlayerPrefs.GetInt(PlayerPrefs.GetString("nowLevel"))  ) {
+            PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"), starsNum);
+        }
+
+        int sum = 0;//存储所有星星数量
+        for (int i = 1; i <= totalNum; i++) {
+            sum += PlayerPrefs.GetInt("Level" + i.ToString());
+        }
+        print( sum );
+        PlayerPrefs.SetInt("totalNum", sum);
     }
 }
