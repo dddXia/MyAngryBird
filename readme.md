@@ -5,3 +5,5 @@
 ![image](https://github.com/dddXia/MyAngryBird/blob/master/Images/%E5%9C%B0%E5%9B%BE%E9%80%89%E6%8B%A9.PNG)
 <br>
 ![image](https://github.com/dddXia/MyAngryBird/blob/master/Images/%E9%97%AA%E7%94%B5%E9%B8%9F.PNG)
+<br>
+![image](https://github.com/dddXia/MyAngryBird/blob/master/Images/%E9%97%AA%E7%94%B5.PNG)
